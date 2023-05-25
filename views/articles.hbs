@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статьи</title>
+  {{> staticResources }}
+</head>
+<body>
+{{> navigation }}
+<article>
+  <section class="article-section" id="article-page">
+    <p><a name="articles"></a></p>
+    <h2 class="menu-section">Статьи</h2>
+    <blockquote>Нет ничего лучше, чем старая дружба и старое вино.<cite> - Английская пословица</cite></blockquote>
+    <div class="article-list">
+      <h3><a href="Georgian-wine">Виноделие Грузии</a></h3>
+      <p class="article">«Грузинское вино будет существовать до тех пор, пока жив хотя бы один грузин»...
+        <a class="continue-reading" href="Georgian-wine">читать далее</a></p>
+      <h3><a href="Slovakian-wine">Виноделие Словакии</a></h3>
+      <p class="article">Как и в любой другой части мира, выбор сортов продиктован климатом и традициями.
+        До начала глобального потепления...<a class="continue-reading" href="Slovakian-wine">читать далее</a></p>
+      {{#each posts}}
+        <div>
+          <h3><a href="/posts/{{this.id}}">{{this.title}}</a></h3>
+          <p class="article">{{this.content.slice 0 50}}...</p>
+          <a class="continue-reading" href="/posts/{{this.id}}">читать далее</a>
+        </div>
+      {{/each}}
+    </div>
+    <!--img class="background-img" src="images/barrels.jpg"-->
+  </section>
+
+</article>
+{{> footer }}
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин Winely</title>
+  {{> staticResources }}
+</head>
+<body>
+{{> navigation }}
+<article>
+  <section class="shop-section" id="shop-page">
+    <p><a name="shop"></a></p>
+    <h2 class="menu-section">Магазин</h2>
+    <ul class="product-grid">
+      <li class="product-card">
+        <a href="#">
+          <img src="https://jmrkpxyvei.a.trbcdn.net/medias/1019132-300Wx300H-avif?context=bWFzdGVyfGltYWdlc3w2MjYxfGltYWdlL2F2aWZ8aW1hZ2VzL2gyNS9oOGQvMTAxMjEzMzM3MzU0NTQuYXZpZnw2YjE0ZDIzOTY1OGU0MGI1MWQxNDliZGZlZTIwNjJkMzM4MzM3ODQyNjdhZTE0YmRjZTJkYzNjZDBiYzAwYjky" alt="Product Image">
+          <h3>UVC Petit Chablis</h3>
+          <span>Белое сухое, Франция</span>
+          <span>$19</span>
+        </a>
+      </li>
+      <li class="product-card">
+        <a href="#">
+          <img src="https://jmrkpxyvei.a.trbcdn.net/medias/1022585-300Wx300H-avif?context=bWFzdGVyfGltYWdlc3wzNjE5fGltYWdlL2F2aWZ8aW1hZ2VzL2gwMC9oMmUvMTAxMjAxMjY1NjIzMzQuYXZpZnwwY2ViYTViYTE5YjdiZjcwYjYwMGQwZGFiNTAxZDY5M2M0NGI4MDczZDFhNWZmNTg4Njc5ZmQ5NDkzNGIyNjVi" alt="Product Image">
+          <h3>Lumera Donnafugatao</h3>
+          <span>Розовое сухое, Италия</span>
+          <span>$22</span>
+        </a>
+      </li>
+      <li class="product-card">
+        <a href="#">
+          <img src="https://jmrkpxyvei.a.trbcdn.net/medias/1000217-1-300Wx300H-avif?context=bWFzdGVyfGltYWdlc3wxMjcyNjB8aW1hZ2UvYXZpZnxpbWFnZXMvaGVjL2g2ZC8xMDEyMTQzMTkwODM4Mi5hdmlmfGJkOWVkMzJiYjE0MDNkZTRjMTFmMTVjM2JiNjFlYTA4MGZjYWMxMWNmMDZmYjNkMzk2ODVjYjk5MjE5OGIwYzc" alt="Product Image">
+          <h3>Torres San Valentin Garnacha</h3>
+          <span>Красное сухое, Испания</span>
+          <span>$11</span>
+        </a>
+      </li>
+      <li class="product-card">
+        <a href="#">
+          <img src="https://jmrkpxyvei.a.trbcdn.net/medias/1017104.png-300Wx300H-avif?context=bWFzdGVyfGltYWdlc3wxNzA3OHxpbWFnZS9hdmlmfGltYWdlcy9oMDgvaGE5LzEwMTIwNjc0Mzc3NzU4LmF2aWZ8YTZkMzJiM2E1MTljYzQwNzM4NjQxYjkxYzQ4MWY3ZTZkMzEyZmY2NTRkODkzYTBmN2EwYWRlZGFiMmJkZDdlMw" alt="Product Image">
+          <h3>Piccini Toscana Bianco</h3>
+          <span>Белое сухое, Италия</span>
+          <span>$10</span>
+        </a>
+      </li>
+      <li class="product-card">
+        <a href="#">
+          <img src="https://jmrkpxyvei.a.trbcdn.net/medias/1022499-300Wx300H-avif?context=bWFzdGVyfGltYWdlc3w2MTc2fGltYWdlL2F2aWZ8aW1hZ2VzL2hhNS9oYjIvMTAxMjAxODU5Mzc5NTAuYXZpZnxmYmNlMjYwOGU3MDM5OWQ4ZjU0NTRlMjViMzdkMjQwNjZlNWYzYmNjZjE2ZjhjYzk3NTcwZWE5ZDM5YmI3OTI5" alt="Product Image">
+          <h3>Morandina Valpolicella Pra</h3>
+          <span>Красное сухое, Италия</span>
+          <span>$15</span>
+        </a>
+      </li>
+      <li class="product-card">
+        <a href="#">
+          <img src="https://jmrkpxyvei.a.trbcdn.net/medias/1020245-300Wx300H-avif?context=bWFzdGVyfGltYWdlc3wxMDYyN3xpbWFnZS9hdmlmfGltYWdlcy9oYmYvaDkwLzEwMTIxMDI4MjA2NjIyLmF2aWZ8ZTY5ZTdmYjlmYzUyMjUzMDU2MTdjMWM3Y2Y2MGY2ZDE4YTI5ODljYzdkY2YxYzU4ZGUwYTJiMzFjMGM1MWRhOA" alt="Product Image">
+          <h3>Passo Sardo</h3>
+          <span>Красное полусухое, Италия</span>
+          <span>$11</span>
+        </a>
+      </li>
+      <li class="product-card">
+        <a href="#">
+          <img src="https://jmrkpxyvei.a.trbcdn.net/medias/1024192-300Wx300H-avif?context=bWFzdGVyfGltYWdlc3wyMTg4NDB8aW1hZ2UvYXZpZnxpbWFnZXMvaDA4L2g5Mi8xMDEyMTQ3ODQzODk0Mi5hdmlmfDRmNjI1NGM2NGEwZDVjYjQ5ZGRhMWMyOWZkYzc4N2RkZWE4MWVjM2U3NjcxZDFmOTMwZDA1MTQzYTE1OTdiZGQ" alt="Product Image">
+          <h3>Barton & Guestier Bordeaux Blanc</h3>
+          <span>Белое сухое, Франция</span>
+          <span>$13</span>
+        </a>
+      </li>
+      <li class="product-card">
+        <a href="#">
+          <img src="https://jmrkpxyvei.a.trbcdn.net/medias/1026289-300Wx300H-avif?context=bWFzdGVyfGltYWdlc3w0NTU2M3xpbWFnZS9wbmd8aW1hZ2VzL2hhNi9oMjQvMTAxMzE0NDIxMzkxNjYucG5nfDVkNjM3MjY4NDMzZjRmZjRjNDJjYTUzYjYwNmJlODg0OWU0ZjZhNzYyMjRhODMzYzIzOTI3N2RiY2MzYWNhMzU" alt="Product Image">
+          <h3>Diablo Golden Chardonnayy</h3>
+          <span>Белое полусухое, Чили</span>
+          <span>$14</span>
+        </a>
+      </li>
+    </ul>
+    <h4><a class="to" href="ToBuyList">Добавьте вина в свой список покупок!</a></h4>
+  </section>
+</article>
+{{> footer }}
+</body>
+</html>

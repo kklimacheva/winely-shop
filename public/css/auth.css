@@ -1,0 +1,85 @@
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.box {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 25px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: #a86d7b
+}
+
+.inp{
+    min-width: 190px;
+    color: #3b3b3a;
+    padding: 5px 5px 5px 15px;
+    border: 0;
+    border-radius: 20px;
+    margin-top:20px
+}
+
+.inp:focus {
+    outline: none;
+}
+
+.btn{
+    font-family: Montserrat, sans-serif;
+    width: 80px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #a86d7b;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    transition-duration: 1.5s;
+}
+
+.btn:hover{
+    background-color: rgba(255,255,255,.1);
+    border: solid 2px #a86d7b;
+    transition-duration: 1.5s;
+}
+
+#signUpButton{
+    font-family: Montserrat, sans-serif;
+    width: 200px;
+    margin-top: -7px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #a86d7b;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    transition-duration: 1.5s;
+}
+
+#signInButton{
+    font-family: Montserrat, sans-serif;
+    width: 80px;
+    margin-top: -20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #a86d7b;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    transition-duration: 1.5s;
+}
+
+#signInButton:hover{
+    cursor: pointer;
+}
+
+#signUpButton:hover {
+    cursor: pointer;
+}

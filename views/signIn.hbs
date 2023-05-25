@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="wine, shop, blog, wine news">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  {{> staticResources }}
+</head>
+<body>
+<nav class="top-menu">
+  <a href="index"><img class="navbar-logo" src="../images/logo.png"></a>
+  <img class="name" src="../images/logo_name.png">
+  <ul class="menu-main">
+    <li class="node-menu-list-item">
+      <a href="auth" target="_self">
+        <button type="submit" id="signUpButton">Зарегистрироваться</button>
+      </a>
+    </li>
+  </ul>
+</nav>
+<article>
+  <auth class="bg">
+    <div class="box">
+      <h1>Вход в личный кабинет</h1>
+      <form action="">
+        <input class="inp" type="text" id="signInEmail" placeholder="Почта">
+        <input class="inp" type="password" id="signInPassword" placeholder="Пароль">
+        <hr style="border-color: rgba(0,0,0, 0)">
+        <input class="btn" onclick="signInOnClick()" type="button" value="Вход">
+      </form>
+    </div>
+  </auth>
+</article>
+{{> footer }}
+{{ supertikensInit }}
+</body>
+</html>
